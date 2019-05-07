@@ -1,1 +1,10 @@
 /* write your override styles here */
+#wall .tag-1,
+#wall .tag-1 + #tag-2,
+#wall .tag-1 + #tag-2 + #tag-3,
+#wall .parent #tag-4,
+#wall .parent + div.parent div#tag-5,
+/* ^ Doesn't matter where I use "div" as long as I used it twice here, it works!*/
+#wall div:last-child {
+  display: none;
+}
