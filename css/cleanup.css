@@ -1,1 +1,48 @@
-/* write your override styles here */
+/* Tag 1 */
+
+#wall .tag-1 {
+    display: none;
+}
+
+/* Tag 2 - With the following code I am not sure if I 
+need to specify the element name before 
+the tag id being that the ID is unique */
+
+body #wall div#tag-2 {
+    display: none;
+}
+
+/* Tag 3 - The following element I am referencing has 
+TWO class names and they are seperated with a 
+dot in css */
+
+div#wall div#tag-3.slick.wicked{
+    display: none;
+  }
+
+  /* Tag 4 */
+
+  div#wall div#tag-4 {
+    display: none;
+  }
+
+  /* Tag 5 */
+
+  div#wall div.parent div#tag-5.slick {
+    display: none;
+  }
+
+  /* Tag 6 specifying elements now to make 
+  sure I have the order and specificity needed */
+
+
+  body div#wall div.parent div:last-child div#tag-6 { 
+    display: none;
+  }
+
+  /* Tag 7 */
+
+  body div#wall div.parent div > div#tag-7.slick {
+    display: none;
+  }
+
